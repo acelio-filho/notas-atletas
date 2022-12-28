@@ -1,2 +1,5 @@
 # notas-atletas
-Conteúdo para avaliação de curso de formação. 
+*UTILIZANDO O CELULAR PARA ESTE REPOSITÓRIO*
+_______________________________________
+Conteúdo apenas para avaliação de curso
+ 

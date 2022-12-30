@@ -19,7 +19,7 @@ let atletas = [
 function retornaListaNotas(dados){
   let atletas=dados
 for (const element of atletas) {
-  let notasValidas = element.notas.sort().slice(1,4);//precisa ser sort(comparaNumeros) pra ser uma média real, senão as notas 10 ficam sempre em primeiro lugar na matriz
+  let notasValidas = element.notas.sort().slice(1,4);
   let somaDasNotas = 0;
  let somaDasNotasValidas = notasValidas.reduce(
     (acumulador, valorAtual) => acumulador + valorAtual,

@@ -15,7 +15,7 @@ let atletas = [
      nome: "Bruno Castro",
      notas: [10, 10, 10, 9, 9.5]
    }
-     ];
+     ]
 function retornaListaNotas(dados){
   let atletas=dados
 for (const element of atletas) {
@@ -28,15 +28,8 @@ for (const element of atletas) {
   console.log('Atleta: '+element.nome);
   console.log('Notas Obtidas:'+element.notas.sort().join(","));
   console.log('Média Válida: '+somaDasNotasValidas/notasValidas.length);
-  console.log();
-  element.media=somaDasNotasValidas/notasValidas.length; //adiciona a média à matriz let atletas
+  console.log('');
 }
-return atletas.forEach(function(atleta){ //for Each na nova matriz, que contém a média
-return `Atleta: ${atleta.nome}
-Notas obtidas: ${atleta.notas.sort()}
-Média Válida: ${atleta.media}
-`;
-});
 
-}
+}//function
 retornaListaNotas(atletas);

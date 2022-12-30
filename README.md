@@ -1,6 +1,7 @@
 # REPOSITÓRIO: notas-atletas
-_______________________________________
-Conteúdo apenas para avaliação de curso
+*Conteúdo apenas para avaliação de curso*
+
+-----
 - 1 [Pontuação dos atletas](#1--pontuação-dos-atletas)
 - 2 [Dados do atleta](#2--dados-do-atleta)
 _______________________________________
@@ -113,4 +114,3 @@ Você deverá **criar uma classe Atleta** para concentrar os atributos e método
     Categoria: Adulto
     IMC: 27.68166089965398
     Média válida: 8.766666666666666
-

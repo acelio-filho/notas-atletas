@@ -1,7 +1,8 @@
-REPOSITÓRIO: notas-atletas
-*UTILIZANDO O CELULAR* :-)
+# REPOSITÓRIO: notas-atletas
 _______________________________________
 Conteúdo apenas para avaliação de curso
+- 1 [Pontuação dos atletas](#1--pontuação-dos-atletas)
+- 2 [Dados do atleta](#2--dados-do-atleta)
 _______________________________________
 
 # 1- Pontuação dos atletas

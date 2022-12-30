@@ -16,20 +16,29 @@ let atletas = [
      notas: [10, 10, 10, 9, 9.5]
    }
      ]
-function retornaListaNotas(dados){
-  let atletas=dados
+function retornaListaNotas(atletas){
+  let resultados = [];
 for (const element of atletas) {
-  let notasValidas = element.notas.sort().slice(1,4);
+  let notasValidas = element.notas.sort().slice(1,element.notas.length-1);//precisaria ser sort(comparaNumeros(a, b)) pra ser uma média real, senão as notas 10 ficam sempre em primeiro lugar na matriz
   let somaDasNotas = 0;
  let somaDasNotasValidas = notasValidas.reduce(
     (acumulador, valorAtual) => acumulador + valorAtual,
     somaDasNotas
   );
+  let mediaValida = somaDasNotasValidas / notasValidas.length;
   console.log('Atleta: '+element.nome);
   console.log('Notas Obtidas:'+element.notas.sort().join(","));
-  console.log('Média Válida: '+somaDasNotasValidas/notasValidas.length);
+  console.log('Média Válida: '+mediaValida);
   console.log('');
+  //adiciona a média calculada à matriz resultados
+  resultados.push({
+      nome: element.nome,
+      notas: element.notas.sort(),
+      media: mediaValida,
+    });
 }
-
-}//function
+//retorna a matriz com a média adicionada
+return(resultados);
+}//function fim
+//
 retornaListaNotas(atletas);
